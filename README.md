@@ -1,5 +1,7 @@
 # Module_LLM_deb_investivate
 
+M5StackのModuleLLMのdebパッケージについて
+
 https://docs.m5stack.com/en/guide/llm/llm/image
 (2025/1/7)
 ```
@@ -19,3 +21,42 @@ llm-yolo11n-hand-pose_0.3-m5stack1_arm64.deb
 llm-yolo11n-pose_0.3-m5stack1_arm64.deb
 llm-yolo_1.4-m5stack1_arm64.deb
 ```
+
+```
+debパッケージから以下の情報を取得しました。
+
+
+1. 基本情報 (`dpkg-deb -I`)
+   - パッケージ名、バージョン
+   - メンテナ情報
+   - 説明文
+
+2. コントロール情報
+   - コントロールファイルの内容
+   - インストール前後のスクリプト
+   - 削除前後のスクリプト
+   - 設定スクリプト
+
+3. アーキテクチャ情報
+
+4. MD5チェックサム
+   - パッケージの整合性確認用
+
+5. ファイル一覧 (`dpkg -c`)
+   - 含まれるファイルとパーミッション
+
+6. パッケージサイズ
+   - ファイルサイズと更新日時
+
+7. 依存関係
+   - 必須依存（Depends）
+   - 事前依存（Pre-Depends）
+   - 推奨パッケージ（Recommends）
+   - 提案パッケージ（Suggests）
+
+使い方は：
+```bash
+chmod +x deb-contents.sh
+./deb-contents.sh [ディレクトリパス]
+```
+
