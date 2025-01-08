@@ -1,6 +1,7 @@
 # Module_LLM_deb_investivate
-Module-LLMのdebパッケージの中身調査
 
+https://docs.m5stack.com/en/guide/llm/llm/image
+(2025/1/7)
 ```
 lib-llm_1.4-m5stack1_arm64.deb
 llm-depth-anything_1.3-m5stack1_arm64.deb
@@ -20,9 +21,8 @@ llm-yolo_1.4-m5stack1_arm64.deb
 ```
 
 ```
-Debian パッケージ分析レポート
-実行日時: 2025-01-08 09:02:39
-分析対象ディレクトリ: .
+Module-LLMのdebパッケージの中身調査
+
 ================================================
 
 ### パッケージ: ./lib-llm_1.4-m5stack1_arm64.deb ###
