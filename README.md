@@ -1,8 +1,9 @@
 # Module_LLM_deb_investivate
 
-M5StackのModuleLLMのdebパッケージについて
+M5StackのModuleLLMのdebパッケージから情報を抽出しました。<br>
+<https://github.com/nnn112358/Module_LLM_deb_investivate/blob/main/deb_analysis_20250108_090239.txt><br>
 
-https://docs.m5stack.com/en/guide/llm/llm/image
+https://docs.m5stack.com/en/guide/llm/llm/image<br>
 (2025/1/7)
 ```
 lib-llm_1.4-m5stack1_arm64.deb
