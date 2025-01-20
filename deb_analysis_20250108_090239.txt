@@ -2,6 +2,93 @@ Debian パッケージ分析レポート
 分析対象ディレクトリ: .
 ================================================
 
+
+ディレクトリ '.' 内の.debファイルを分析中...
+### パッケージ: ./llm-vlm_1.4-m5stack1_arm64.deb ###
+
+1. 基本情報 (dpkg-deb -I)
+------------------------
+ new Debian package, version 2.0.
+ size 3139900 bytes: control archive=403 bytes.
+     265 bytes,    11 lines      control
+     178 bytes,     4 lines   *  postinst             #!/bin/sh
+     178 bytes,     4 lines   *  prerm                #!/bin/sh
+ Package: llm-vlm
+ Version: 1.4
+ Architecture: arm64
+ Maintainer: dianjixz <dianjixz@m5stack.com>
+ Original-Maintainer: m5stack <m5stack@m5stack.com>
+ Section: llm-module
+ Priority: optional
+ Depends: lib-llm
+ Homepage: https://www.m5stack.com
+ Description: llm-module
+  bsp.
+
+2. コントロール情報 (dpkg -e)
+------------------------
+Package: llm-vlm
+Version: 1.4
+Architecture: arm64
+Maintainer: dianjixz <dianjixz@m5stack.com>
+Original-Maintainer: m5stack <m5stack@m5stack.com>
+Section: llm-module
+Priority: optional
+Depends: lib-llm
+Homepage: https://www.m5stack.com
+Description: llm-module
+ bsp.
+
+[postinst スクリプト]
+#!/bin/sh
+[ -f "/lib/systemd/system/llm-vlm.service" ] && systemctl enable llm-vlm.service
+[ -f "/lib/systemd/system/llm-vlm.service" ] && systemctl start llm-vlm.service
+exit 0
+
+[prerm スクリプト]
+#!/bin/sh
+[ -f "/lib/systemd/system/llm-vlm.service" ] && systemctl stop llm-vlm.service
+[ -f "/lib/systemd/system/llm-vlm.service" ] && systemctl disable llm-vlm.service
+exit 0
+
+3. アーキテクチャ情報 (dpkg-deb --field)
+------------------------
+arm64
+
+4. MD5チェックサム
+------------------------
+b267e5570be262f1da4aa9ccf4db3007  ./llm-vlm_1.4-m5stack1_arm64.deb
+
+5. ファイル一覧 (dpkg -c)
+------------------------
+drwxrwxr-x niuchenyang/niuchenyang 0 2025-01-06 12:21 ./
+drwxrwxr-x niuchenyang/niuchenyang 0 2025-01-06 12:21 ./lib/
+drwxrwxr-x niuchenyang/niuchenyang 0 2025-01-06 12:21 ./lib/systemd/
+drwxrwxr-x niuchenyang/niuchenyang 0 2025-01-06 12:21 ./lib/systemd/system/
+-rw-rw-r-- niuchenyang/niuchenyang 246 2025-01-06 12:21 ./lib/systemd/system/llm-vlm.service
+drwxrwxr-x niuchenyang/niuchenyang   0 2025-01-06 12:21 ./opt/
+drwxrwxr-x niuchenyang/niuchenyang   0 2025-01-06 12:21 ./opt/m5stack/
+drwxrwxr-x niuchenyang/niuchenyang   0 2025-01-06 12:21 ./opt/m5stack/bin/
+-rwxrwxr-x niuchenyang/niuchenyang 11995960 2025-01-04 17:25 ./opt/m5stack/bin/llm_vlm
+
+6. パッケージサイズ
+------------------------
+-rw-r--r-- 1 root root 3.0M  1月  6 12:47 ./llm-vlm_1.4-m5stack1_arm64.deb
+
+7. 依存関係 (dpkg-deb --field)
+------------------------
+lib-llm
+
+
+
+
+================================================
+
+サマリー
+--------
+処理完了時刻: 2025-01-20 09:43:01
+
+
 ### パッケージ: ./lib-llm_1.4-m5stack1_arm64.deb ###
 
 1. 基本情報 (dpkg-deb -I)
