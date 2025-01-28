@@ -1,0 +1,52 @@
+Debian パッケージ分析レポート
+実行日時: 2025-01-28 10:17:05
+分析対象ディレクトリ: .
+================================================
+
+### パッケージ: ./llm-deepseek-r1-1.5B-ax630c_0.3-m5stack1_arm64.deb ###
+
+1. 基本情報 (dpkg-deb -I)
+------------------------
+ new Debian package, version 2.0.
+ size 1749738884 bytes: control archive=332 bytes.
+     268 バイト、   10 行      control              
+      17 バイト、    2 行   *  postinst             #!/bin/sh
+      17 バイト、    2 行   *  prerm                #!/bin/sh
+ Package: llm-deepseek-r1-1.5B-ax630c
+ Version: 0.3
+ Architecture: arm64
+ Maintainer: dianjixz <dianjixz@m5stack.com>
+ Original-Maintainer: m5stack <m5stack@m5stack.com>
+ Section: llm-module
+ Priority: optional
+ Homepage: https://www.m5stack.com
+ Description: llm-module
+  bsp.
+
+2. コントロール情報 (dpkg -e)
+------------------------
+Package: llm-deepseek-r1-1.5B-ax630c
+Version: 0.3
+Architecture: arm64
+Maintainer: dianjixz <dianjixz@m5stack.com>
+Original-Maintainer: m5stack <m5stack@m5stack.com>
+Section: llm-module
+Priority: optional
+Homepage: https://www.m5stack.com
+Description: llm-module
+ bsp.
+
+[postinst スクリプト]
+#!/bin/sh
+exit 0
+
+[prerm スクリプト]
+#!/bin/sh
+exit 0
+
+3. アーキテクチャ情報 (dpkg-deb --field)
+------------------------
+arm64
+
+4. MD5チェックサム
+------------------------
