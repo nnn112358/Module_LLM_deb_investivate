@@ -50,3 +50,66 @@ arm64
 
 4. MD5チェックサム
 ------------------------
+1c2e929aaeeba4ebe889a0b721320562  ./llm-deepseek-r1-1.5B-ax630c_0.3-m5stack1_arm64.deb
+
+5. ファイル一覧 (dpkg -c)
+------------------------
+drwxrwxr-x addison/addison   0 2025-01-22 17:58 ./
+drwxrwxr-x addison/addison   0 2025-01-22 17:58 ./opt/
+drwxrwxr-x addison/addison   0 2025-01-22 17:58 ./opt/m5stack/
+drwxrwxr-x addison/addison   0 2025-01-22 17:58 ./opt/m5stack/data/
+drwxrwxr-x addison/addison   0 2025-01-22 15:30 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/
+-rw-rw-r-- addison/addison 3252 2025-01-22 15:30 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/hashes.txt
+-rw-rw-r-- addison/addison 466747392 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/model.embed_tokens.weight.bfloat16.bin
+-rw-rw-r-- addison/addison  49270800 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l0_together.axmodel
+-rw-rw-r-- addison/addison  49270936 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l10_together.axmodel
+-rw-rw-r-- addison/addison  49270784 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l11_together.axmodel
+-rw-rw-r-- addison/addison  49270768 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l12_together.axmodel
+-rw-rw-r-- addison/addison  49270808 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l13_together.axmodel
+-rw-rw-r-- addison/addison  49270728 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l14_together.axmodel
+-rw-rw-r-- addison/addison  49270792 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l15_together.axmodel
+-rw-rw-r-- addison/addison  49270712 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l16_together.axmodel
+-rw-rw-r-- addison/addison  49270800 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l17_together.axmodel
+-rw-rw-r-- addison/addison  49270832 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l18_together.axmodel
+-rw-rw-r-- addison/addison  49270800 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l19_together.axmodel
+-rw-rw-r-- addison/addison  49270760 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l1_together.axmodel
+-rw-rw-r-- addison/addison  49270792 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l20_together.axmodel
+-rw-rw-r-- addison/addison  49270848 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l21_together.axmodel
+-rw-rw-r-- addison/addison  49270896 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l22_together.axmodel
+-rw-rw-r-- addison/addison  49270800 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l23_together.axmodel
+-rw-rw-r-- addison/addison  49270856 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l24_together.axmodel
+-rw-rw-r-- addison/addison  49270736 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l25_together.axmodel
+-rw-rw-r-- addison/addison  49270784 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l26_together.axmodel
+-rw-rw-r-- addison/addison  49270808 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l27_together.axmodel
+-rw-rw-r-- addison/addison  49270792 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l2_together.axmodel
+-rw-rw-r-- addison/addison  49270848 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l3_together.axmodel
+-rw-rw-r-- addison/addison  49270888 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l4_together.axmodel
+-rw-rw-r-- addison/addison  49270776 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l5_together.axmodel
+-rw-rw-r-- addison/addison  49270752 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l6_together.axmodel
+-rw-rw-r-- addison/addison  49270800 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l7_together.axmodel
+-rw-rw-r-- addison/addison  49270816 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l8_together.axmodel
+-rw-rw-r-- addison/addison  49270880 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_p128_l9_together.axmodel
+-rw-rw-r-- addison/addison 237453952 2025-01-22 09:54 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/qwen2_post.axmodel
+drwxrwxr-x addison/addison         0 2025-01-22 09:53 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/tokenizer/
+-rw-rw-r-- addison/addison   7031660 2025-01-22 09:53 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/tokenizer/tokenizer.json
+-rw-rw-r-- addison/addison      3061 2025-01-22 09:53 ./opt/m5stack/data/deepseek-r1-1.5B-ax630c/tokenizer/tokenizer_config.json
+drwxrwxr-x addison/addison         0 2025-01-22 17:58 ./opt/m5stack/data/models/
+-rw-rw-r-- addison/addison       911 2025-01-22 15:56 ./opt/m5stack/data/models/mode_deepseek-r1-1.5B-ax630c.json
+
+6. パッケージサイズ
+------------------------
+-rwxrwxrwx 1 nnn nnn 1.7G  1月 26 19:27 ./llm-deepseek-r1-1.5B-ax630c_0.3-m5stack1_arm64.deb
+
+7. 依存関係 (dpkg-deb --field)
+------------------------
+
+
+
+
+
+================================================
+
+サマリー
+--------
+処理完了時刻: 2025-01-28 10:17:54
+処理したファイル数: 1
